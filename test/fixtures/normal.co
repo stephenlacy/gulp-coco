@@ -1,0 +1,48 @@
+coco = require "coco"
+
+last = -> it[*-1]
+function equals
+  @@0 == @@1
+
+$ \.account
+  .addClass \active
+  .show \slow
+
+pythagorases =
+  for a from 9 to 1 by -1
+    for b from a til 99
+      h = (a*a + b*b) ** 0.5
+      [a, b, h] unless h % 1
+
+for let filename, index of <[ head body tail ]>
+  let timestamp = new Date
+    err, contents <~ fs.readFile filename
+    @compile filename, index, contents, timestamp
+
+mixin = (...objects) ->
+  for objects => @ <<< &
+  this
+
+
+alert do
+  try
+    nonexistent / void
+  catch
+    "And the error is ... #e"
+
+export class Cat extends Animal
+  (@name) ->
+    super ...
+    @meowed = 0
+    @meow   = ~> ++@meowed
+  @interval = 5000ms
+  play: -> setInterval @meow, ..interval
+  bark: -> ...
+
+switch day
+case \Fri \Sat
+  if day is not rainy
+    go bingo
+    go dancing
+case \Sun then go church
+default go work

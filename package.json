@@ -1,0 +1,40 @@
+{
+  "name": "gulp-coco",
+  "description": "Compile coco to JavaScript with gulp",
+  "version": "0.0.1",
+  "homepage": "http://github.com/stevelacy/gulp-coco",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stevelacy/gulp-coco.git"
+  },
+  "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
+  "main": "./index.js",
+  "dependencies": {
+    "coffee-script": "^1.7.0",
+    "map-stream": "^0.1.0",
+    "coco": "^0.9.1",
+    "replace-ext": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "gulp-util": "^2.2.14"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
+  },
+  "engines": {
+    "node": ">= 0.9.0"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "gulp-plugin"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/stevelacy/gulp-coco/raw/master/LICENSE"
+    }
+  ]
+}
