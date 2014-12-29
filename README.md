@@ -5,7 +5,7 @@
 > Compile [coco](https://github.com/satyr/coco) with [gulp](http://gulpjs.com)
 
 <table>
-<tr> 
+<tr>
 <td>Package</td><td>gulp-coco</td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ gulp = require "gulp"
 coco = require "gulp-coco"
 
 gulp.task "coco", ->
-  gulp.src "./main.co" 
+  gulp.src "./main.co"
   .pipe coco()
   .pipe gulp.dest "./"
 
@@ -65,7 +65,7 @@ gulp.task "coco", ->
 
 (MIT License)
 
-Copyright (c) 2014 Steve Lacy <me@slacy.me> http://slacy.me
+Copyright (c) 2015 Steve Lacy <me@slacy.me> http://slacy.me
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
