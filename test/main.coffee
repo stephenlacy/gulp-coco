@@ -13,7 +13,7 @@ describe "gulp-coco", ->
       cwd: "test/"
       path: "test/fixtures/normal"
       contents: fs.readFileSync "test/fixtures/normal.co"
-    
+
     Co.once "data", (newFile) ->
       should.exist newFile
       should.exist newFile.contents
