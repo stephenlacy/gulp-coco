@@ -1,7 +1,7 @@
 {
   "name": "gulp-coco",
   "description": "Compile coco to JavaScript with gulp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://github.com/stevelacy/gulp-coco",
   "repository": {
     "type": "git",
