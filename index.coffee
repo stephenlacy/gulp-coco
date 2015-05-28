@@ -1,16 +1,15 @@
-coco = require "coco"
-map = require "map-stream"
-rext = require "replace-ext"
-
+coco = require 'coco'
+through = require 'through2'
+rext = require 'replace-ext'
 
 module.exports = (opts) ->
-  opts = {} unless opts
+  opts ?= {}
 
-  compile = (file, cb) ->
+  compile = (file, enc, cb) ->
 
     data = coco.compile file.contents.toString(), opts
     file.contents = new Buffer data
-    file.path = rext file.path, ".js"
+    file.path = rext file.path, '.js'
     cb null, file
 
-  return map compile
+  return through.obj compile
