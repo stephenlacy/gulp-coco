@@ -11,14 +11,14 @@
   "main": "./index.js",
   "dependencies": {
     "coco": "^0.9.1",
-    "coffee-script": "^1.9.0",
-    "map-stream": "^0.1.0",
-    "replace-ext": "0.0.1"
+    "coffee-script": "^1.9.3",
+    "replace-ext": "0.0.1",
+    "through2": "^0.6.5"
   },
   "devDependencies": {
+    "gulp-util": "^3.0.4",
     "mocha": "*",
-    "should": "*",
-    "gulp-util": "^2.2.14"
+    "should": "*"
   },
   "scripts": {
     "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
@@ -31,10 +31,5 @@
     "gulpplugin",
     "gulp-plugin"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/stevelacy/gulp-coco/raw/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
